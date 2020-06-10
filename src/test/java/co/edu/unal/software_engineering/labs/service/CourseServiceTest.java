@@ -23,9 +23,10 @@ public class CourseServiceTest{
     @Test
     public void mapperCourseEntityTest( ){
         CoursePOJO pojo = new CoursePOJO( );
-        pojo.setCourseName( "Course Test # 1" );
+        pojo.setCourseName( "Course Test # 3" );
         pojo.setDurationHours( 400 );
         Course course = courseService.mapperCourseEntity( pojo );
+        pojo = new CoursePOJO();
 
         assertNotNull( course );
         assertNotNull( course.getCourseName( ) );
